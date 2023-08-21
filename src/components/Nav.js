@@ -5,6 +5,13 @@ const Nav = () => {
         <nav>
             <a href='/' />
             <img src={logo} alt='Little Lemon logo' />
+
+            {/* Mobile nav bar */}
+            <div>
+                <div className='bar'></div>
+                <div className='bar'></div>
+                <div className='bar'></div>
+            </div>
         </nav>
     );
 };
