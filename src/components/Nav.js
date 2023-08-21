@@ -13,7 +13,7 @@ const Nav = () => {
             </a>
 
             {/* Mobile nav bar */}
-            <div className='menu-icon'>
+            <div className='menu-icon' onClick={toggleMenu}>
                 <div className='bar'></div>
                 <div className='bar'></div>
                 <div className='bar'></div>
