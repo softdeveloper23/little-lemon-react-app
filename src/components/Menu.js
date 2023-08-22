@@ -11,15 +11,15 @@ const Menu = () => {
             {/* Menu cards go here */}
             <div className="cards">
                 {
-                    recipes.map(recipe => <div key={recipe.id}>
+                    recipes.map(recipe => <div key={recipe.id} className="menu-items">
                         <img src={recipe.image} alt={recipe.title} />
-                        <div>
-                            <div>
+                        <div className="menu-content">
+                            <div className="heading">
                                 <h5>{recipe.title}</h5>
                                 <p>{recipe.price}</p>
                             </div>
                             <p>{recipe.description}</p>
-                            <button className="orderBtn">Place An Order</button>
+                            <button className="orderbtn">Place An Order</button>
                         </div>
                     </div>)
                 }
