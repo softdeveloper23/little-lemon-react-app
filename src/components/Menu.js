@@ -1,7 +1,29 @@
 import React from "react";
 import recipes from "../recipes";
+import Swal from 'sweetalert2';
 
 const Menu = () => {
+
+    const handleOrder = (id) => {
+        console.log(id, "order placed");
+        Swal.fire({
+            title: 'Do you want to order this?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, order it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Ordered!',
+                    'Your order is being processed.',
+                    'success'
+                )
+            }
+        })
+    }
     return (
         <div className="menu-container">
             <div className="menu-header">
@@ -19,7 +41,7 @@ const Menu = () => {
                                 <p>{recipe.price}</p>
                             </div>
                             <p>{recipe.description}</p>
-                            <button className="orderbtn">Place An Order</button>
+                            <button className="orderbtn" onClick={() => handleOrder(recipe.id)}>Place An Order</button>
                         </div>
                     </div>)
                 }
