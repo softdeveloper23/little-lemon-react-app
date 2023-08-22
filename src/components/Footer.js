@@ -20,6 +20,26 @@ const Footer = () => {
                         <li><a href="/">Login</a></li>
                     </ul>
                 </div>
+
+                <div>
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Address: 1234 Main Street, Anytown, USA</li>
+                        <li>Phone: 1-800-555-5555</li>
+                        <li>Email: little.lemon@email.com</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Social Media Links</h3>
+                    <ul>
+                        <li><a href="/">Facebook</a></li>
+                        <li><a href="/">Twitter</a></li>
+                        <li><a href="/">Instagram</a></li>
+                        <li><a href="/">Youtube</a></li>
+                    </ul>
+                </div>
+
             </section>
         </footer>
     );
