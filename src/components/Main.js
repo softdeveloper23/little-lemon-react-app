@@ -4,6 +4,7 @@ import Booking from "./Booking";
 import Header from "./Header";
 import { useNavigate } from "react-router-dom";
 import { useReducer } from "react";
+import ConfirmedBooking from "./ConfirmedBooking";
 
 const Main = (props) => {
 
@@ -53,7 +54,7 @@ const Main = (props) => {
             <Routes>
                 <Route path="/" element={<Header />} />
                 <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm} />} />
-                <Route path="/" element={<Header />} />
+                <Route path="/confirmed" element={<ConfirmedBooking />} />
             </Routes>
         </main>
     );

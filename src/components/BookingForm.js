@@ -48,6 +48,12 @@ const BookingForm = (props) => {
                             <select id="book-occasion" key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)}>
                                 <option>Birthday</option>
                                 <option>Anniversary</option>
+                                <option>Graduation</option>
+                                <option>Mother's Day</option>
+                                <option>Father's Day</option>
+                                <option>Valentine's Day</option>
+                                <option>Wedding</option>
+                                <option>Other</option>
                             </select>
                         </div>
                         {/* Submit button */}
